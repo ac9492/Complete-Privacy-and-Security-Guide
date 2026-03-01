@@ -114,10 +114,7 @@ Whenever possible, avoid SMS-only 2FA.
 
 # Credential Management
 
-This is the most important section in the entire guide.
-
-If you only implement one section, make it this one.
-
+This is the most important section in the entire guide.If you only implement one section, make it this one.
 ---
 
 ## Password Managers
@@ -129,20 +126,21 @@ Why password managers are essential:
 - Password reuse is the leading cause of account compromise
 - Auto-fill protects against phishing by matching the correct website domain
 
-### Recommended Free Option
+### Recommended Free Options
 
-- **:contentReference[oaicite:0]{index=0}**
+- [Proton Pass][https://proton.me/pass]
+- [Bitwarden][https://bitwarden.com/]
+
+Both offer:
   - Open-source
   - Free tier includes unlimited devices
   - Available on desktop, mobile, and browsers
 
 ### Setup Recommendations
-
 - Use a long master password (preferably 4–5 random words)
 - Enable 2FA for your password manager
 - Let the manager generate passwords (16–20 characters)
 - Never reuse your master password anywhere else
-
 ---
 
 ## Authenticator Apps
@@ -150,11 +148,13 @@ Why password managers are essential:
 Authenticator apps generate TOTP codes for two-factor authentication.
 
 Recommended free options:
-- **:contentReference[oaicite:1]{index=1}** (Android)
-- **:contentReference[oaicite:2]{index=2}** (iOS and Android)
-- **:contentReference[oaicite:3]{index=3}** (cross-platform)
+- [Aegis Authenticator][https://getaegis.app/] (Android)
+- [2FAS][https://2fas.com/] (iOS and Android)
+- [Ente Auth][https://ente.io/auth/] (cross-platform)
 
 Recommendations:
+- Maintain your TOTP codes on a separate device (a phone) versus on all your devices
+- DO NOT put TOTP codes in your password manager, even if it offers that option
 - Enable encrypted backups if supported
 - Avoid relying solely on one device without backups
 - Never screenshot QR codes or store them unencrypted
@@ -166,15 +166,42 @@ Recommendations:
 ### Passkeys
 
 Passkeys are passwordless login credentials built into modern operating systems and devices. They rely on biometrics or device authentication.
+However, how they work depends on your operating system and setup. A Passkey could be a Yubikey, a device, or even data stored on a password manager.
 
+#### Windows
+On Windows, Passkeys are stored locally on your device (via Windows Hello on your TPM), which means if you lose your device, all your passkeys are lost with it.
+It is only recommended you use passkeys on Windows if you have another backup method to access your account. 
+This is particularly relevant for password managers that let you log in with passkeys, since losing, or having your device break, will lose all your access.
+However, local passkeys offer a very strong level of security since they basically cannot be hacked, or lost in a data breach.
+
+#### macOS, iPadOS, & iOS
+On Apple devices, passkeys are stored in your keychain/passwords app and automatically synced across devices. 
+This has the added benefit that as long as you have access to your apple account, your passkeys are backed up.
+However, it introduces an additional risk of having your account hacked or breached, which would grant attackers all your passkeys.
+
+#### Android
+On Android, by default, passkeys are stored on the device's secure element (similar to Windows), but can be integrated with password managers.
+
+#### Linux
+Linux has multiple ways of storing passkeys, but no system-wide implementation like other operating systems. There are apps that let you
+store passkeys similar to Windows Hello.
+
+#### Browsers & Password Managers
+These are cross platform, and work in all the above devices. Its pretty common for Browsers and Password Managers to let you store passkeys.
+It's the easiest cross-platform solution, that works on all the above operating systems. However, since passkeys are much more secure when they 
+are hardware based (via a device or Yubikey), storing them in your browser or password manager introduces a larger attack surface.
+
+#### Benefits of Passkeys
 They are:
 - Resistant to phishing
 - Easier to use than passwords
 - Increasingly supported by major platforms
 
-Use passkeys whenever they are available.
+Whether you should use passkeys (or only a specific kind of passkey) depends on your threat model. I recommend sticking with hardware-based passkeys.
 
 ### Security Keys (YubiKeys)
+Security keys CAN be used as passkeys. To register them, usually when prompted to register a device, click on "Another Device" and then on "Security Key".
+They are one of the strongest forms of passkeys, and they can be used in multiple devices.
 
 Security keys are a more advanced option and are ideal for:
 - Email accounts
