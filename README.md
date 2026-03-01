@@ -128,8 +128,8 @@ Why password managers are essential:
 
 ### Recommended Free Options
 
-- [Proton Pass][https://proton.me/pass]
-- [Bitwarden][https://bitwarden.com/]
+- [Proton Pass](https://proton.me/pass)
+- [Bitwarden](https://bitwarden.com/)
 
 Both offer:
   - Open-source
@@ -148,9 +148,9 @@ Both offer:
 Authenticator apps generate TOTP codes for two-factor authentication.
 
 Recommended free options:
-- [Aegis Authenticator][https://getaegis.app/] (Android)
-- [2FAS][https://2fas.com/] (iOS and Android)
-- [Ente Auth][https://ente.io/auth/] (cross-platform)
+- [Aegis Authenticator](https://getaegis.app/) (Android)
+- [2FAS](https://2fas.com/) (iOS and Android)
+- [Ente Auth](https://ente.io/auth/) (cross-platform)
 
 Recommendations:
 - Maintain your TOTP codes on a separate device (a phone) versus on all your devices
@@ -201,12 +201,12 @@ Whether you should use passkeys (or only a specific kind of passkey) depends on 
 
 ### Security Keys (YubiKeys)
 Security keys CAN be used as passkeys. To register them, usually when prompted to register a device, click on "Another Device" and then on "Security Key".
-They are one of the strongest forms of passkeys, and they can be used in multiple devices.
+They are one of the strongest forms of passkeys, and they can be used in multiple devices across all platforms.
+They are a good option for securing your main accounts (such as Password Managers, Email accounts, 2FA accounts, Apple, Google, and Microsoft accounts, etc).
 
-Security keys are a more advanced option and are ideal for:
-- Email accounts
-- Password managers
-- Apple, Google, or Microsoft accounts
+However, you should buy multiple (I recommend at least 3 if you are ONLY going to rely on security keys, or at least 2 if you will have an additional recovery method, such as Backup Codes or 2FA TOTP codes).
+
+In terms of the brand, [Yubico Yubikeys](https://www.amazon.com/Security-Key-NFC-Yubico-authentication/dp/B0BVNRXFHT/ref=sr_1_4) are the best, although there are many other brands.
 
 They are optional but offer the highest level of account protection.
 
@@ -215,23 +215,26 @@ They are optional but offer the highest level of account protection.
 ## Recovery Codes
 
 Recovery codes allow you to regain access to accounts if you lose your authenticator device or security key.
+These are almost always offered by all online accounts when activating 2FA.
 
 Best practices:
 - Save recovery codes immediately
-- Store them offline or in an encrypted password manager
+- Store them offline or in an encrypted password manager (not your main vault! Use a separate account with a different password when using a password manager!)
 - Never keep them only on the device used for authentication
 
 Without recovery codes, account recovery may be impossible.
-
 ---
 
 # File Storage, Backup, and Sharing
 
-Secure storage is about both **encryption** and **availability**.
+Secure storage is about both **encryption** and **availability**, and for performing backups. In this list I will only suggest E2EE options for storing your data.
+This means no one, not even the cloud storage provider, can access your data. All the options below are cross-platform.
 
-Recommended free options:
-- **:contentReference[oaicite:4]{index=4}**
-- **:contentReference[oaicite:5]{index=5}** (client-side encryption)
+Free services that offer E2EE storage by default (with additional paid options):
+- [Mega](https://mega.nz/) - Offers 20GB of free storage (open source clients)
+- [Ente Phtos](https://ente.io/) - Offers 10GB of free storage for photos & videos (fully open source)
+- [Ente Locker](https://ente.io/locker/) - Offers 100 items (100 files) worth of storage for free - useful for documents and such.
+- [Proton Drive](https://proton.me/drive) - Offers 5GB of free storage, part of Proton ecosystem (open source clients)
 
 ### Simple Backup Rule
 
@@ -240,7 +243,7 @@ At minimum:
 - One cloud copy
 
 Ideally:
-- One additional external or offline copy
+- One additional external or offline copy (3-2-1 rule)
 
 Encryption matters less if data is lost permanently.
 
