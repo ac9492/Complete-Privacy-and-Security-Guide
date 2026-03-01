@@ -191,13 +191,16 @@ Instead, you can use one of the two big privacy browsers:
 - [Mozilla Firefox](http://firefox.com/) - Only major web browser that uses a non-big-tech engine ([Gecko](https://en.wikipedia.org/wiki/Gecko_(software))). Requires additional configuration for better privacy. If you're interested in Firefox, I recommend downloading [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) (blocks trackers and ads). Replace your search engine with one of the ones in the following section (by default they use Google), and also replace your user.js file with [Betterfox](https://github.com/yokoffing/Betterfox/tree/main) which are just settings that improve your privacy.
 
 Aside from those, there are multiple privacy-centric browsers that are based on Gecko or Chromium, but aren't as widely used. Among them are:
+
+- [Vivaldi](https://vivaldi.com/) - Another Chromium-based privacy browser packed with features for power users. However, it is not fully open-source.
 - [DuckDuckGo Browser](https://duckduckgo.com/) - Privacy-centric browser with privacy search by default, tracker blocking, and fully-incognito mode with ability to delete browsing data at any point (does not allow extensions)
 - [Mullvad Browser](https://mullvad.net/en/browser) - Privacy-hardened browser, which blocks trackers, cookies, and fingerprinting (Firefox/Gecko based) by default. It does not allow syncing or extensions.
 - [LibreWolf](https://librewolf.net/) - A hardened version of Firefox by default. If you want to skip the setup for hardening Firefox, you can download LibreWolf and use it as-is. Supports, syncing, profiles, and extensions.
 - [Tor Browser](https://www.torproject.org/download/) - a unique browser that lets you connect through the [Tor network](https://en.wikipedia.org/wiki/Tor_(network)) to any website.
 - [Zen Browser](https://zen-browser.app/) - A Firefox-based privacy focused browser that has additional customization and productivity tools.
 - [Ungoogled Chromium](https://ungoogled-software.github.io/ungoogled-chromium-binaries/) - Basically the Chromium browser, with all the Google services and telemetry removed. This is the closest you can get to Google Chrome without any Google dependencies.
-In some cases, these might be better for privacy, although for most users Brave and Firefox (hardened) should be enough
+
+In some cases, these might be better for privacy, although for most users Brave and Firefox (hardened) should be enough.
 
 ## Safari Disclaimer
 As with the Passwords app, Safari is a solid choice for Apple users. However, if you use other devices, avoid.
@@ -218,10 +221,10 @@ In my particular experience, Brave has the best results of privacy browsers, fol
 Instead try these privacy-respecting alternatives to Google:
 - [Brave Search](https://search.brave.com/) - Independent search engine that uses its own index. Comes bundled with Brave browser by default.
 - [DuckDuckGo](https://duckduckgo.com/) - One of the first privacy focused search engines. Uses anonimized Bing results.
-- [Startpage](https://www.startpage.com/en/) - Anonimizes Google search results.
-- Ecosia
-- Qwant
-- SearXNG
+- [Startpage](https://www.startpage.com/en/) - Anonimizes Google search results. It is not as rich as Google due to the lack of contextual and personal data.
+- [Ecosia](https://www.ecosia.org/) - Plants trees with revenue from ads shown in searches. Bing-based and anonimized searches.
+- [Qwant](https://www.qwant.com/) - Independent and privacy search engine with some reliance on Bing results.
+- [SearXNG](https://searx.space/) - Open-source self-hosted search engine. You need to choose an instance in the link to use.
 
 Using Google occasionally is OK, but do not use it logged in.
 
