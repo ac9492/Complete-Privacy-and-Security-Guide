@@ -62,6 +62,8 @@ I personally only recommend these 4 if you want to use a free password manager. 
 ### Other Popular Paid Options
 
 Note, the comparison only takes into account the free tiers of each password manager. If a password manager puts any sort of limit on multi-device access, the cross-platform table will be marked as "No".
+
+|:----------:|:----------:|:----------:|:----------:|:----------:|
 | [NordPass](https://nordpass.com/) | Yes | No | No | Yes |
 | [Keeper](https://www.keepersecurity.com/personal.html) | No | No | No | Yes |
 | [RoboForm](https://www.roboform.com/) | Yes | No | No | No |
