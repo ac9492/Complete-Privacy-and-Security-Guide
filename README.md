@@ -53,7 +53,7 @@ Why password managers are essential:
 I personally only recommend these 4 if you want to use a free password manager. Only look at other alternatives if you are willing to pay, because their free tier limitations are significant. Furthermore, I would not use 2FAS Pass or KeyPassXC unless you are comfortable setting up your own backup and syncing methods and distrust a cloud based password manager. 
 
 | Password Manager | Unlimited Passwords | Open-source | Cross platform | Cloud-based |
-|:----------:|:----------:|:----------:|:----------:|:----------:|
+|:----------|:----------:|:----------:|:----------:|:----------:|
 | [Bitwarden](https://bitwarden.com/) | Yes | Yes | Yes | Yes |
 | [Proton Pass](https://proton.me/pass) | Yes | Yes | Yes | Yes |
 | [2FAS Pass](https://2fas.com/pass/) | Yes | Yes | Partial | No |
@@ -87,7 +87,7 @@ If you only use Apple devices, the [Passwords app](https://apps.apple.com/us/app
 
 ## Authenticator Apps
 
-Authenticator apps generate TOTP codes for two-factor authentication. Historically, Google Authenticator has been the app used for authentication, but it sends 
+Authenticator apps generate TOTP codes for two-factor authentication. Historically, Google Authenticator has been the app used for authentication, but it sends unncessary telemetry, is closed-source, and backups are stored in Google Drive. Consider using one of the alternatives below which are fully compatible with all TOTP 2FA codes. I personally use 2FAS because it lets me store my TOTP secrets only on my mobile device, with easy ad-hoc sending via the browser extension, without storing any secrets, either temporarily or permanently on my desktop. However, all the options below are considered quite secure.
 
 Recommended free options:
 | TOTP App | Platforms | Backups | Encryption | Open Source |
